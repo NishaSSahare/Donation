@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation</title>
+  <!--======= favicon   =======-->
+ <link rel="shortcut icon" href="./assets/images/donate-icon.jpg" type="donate-icon.png"> 
+  
+ <!--======= custom css link   ============-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--======= google font link  ======-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+    <style>
+      .modal 
+    {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 5; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+       background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    /* Modal Content */
+    .modal-content 
+    {
+      background-color:aliceblue;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 50%;
+    }
+    /* The Close Button */
+    .close 
+    {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus 
+    {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+     </style>
+</head>
+<body>
+<!-- ======= HEADER SECTION START ======= -->
+   <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo">HELPINGCHILD</a>
+      </h1>
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <a href="#" class="logo">Wildvine</a>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Service</span>
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li>
+          <a href="#donate" class="navbar-link" data-nav-link>
+          <span>Donate</span>
+          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+      </li>
+     </ul>
+  </nav>
+<div class="header-action">
+<button class="btn btn-primary" id="myBtn">
+<span>Contact Me</span>
+<ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+</button>
+<div id="myModal" class="modal">
+<!--======== Modal content ======-->
+<div class="modal-content">
+  <span class="close">&times;</span>
+    <section class="section contact" id="contact">
+        <div class="title">
+          <h2 style="margin-top: 10px;margin-bottom: 10px;">ContactUs</h2>
+              </div>
+                <div class="container">
+                  <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button class="btn btn-secondary" type="submit">
+                      <span>Submit</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </form>                      
+                </div> 
+              </section>
+            </div>
+          </div>
+      </div>
+    </div> 
+   </header> 
+   <main>
+<article>  
+<!--====== HEADER SECTION START ==========-->
+     
+<!--====== IMAGE SECTION START ===========-->
+  <section class="hero" id="home">
+        <div class="container">
+          <p class="section-subtitle">
+            <img src="./assets/imges/banner2.jpg" width="32" height="7" alt="Wavy line">
+          </p>  
+<!--======= IMAGE SECTION END =============== -->
+
+<!--===== FEATURES SECTION START =============-->
+  <section class="section features">
+        <div class="container">
+           <ul class="features-list">
+              <li class="features-item">
+                </li>
+                    <li class="features-item">
+                  </li>
+                 <li class="features-item">
+               </li>
+        </div>
+      </li>
+ </ul>
+</div>
+</section>
+<!--====== FEATURE SECTION END ==============-->
+      
+<!--====== ABOUT SECTION START ===============-->
+      <section class="section about" id="about">
+        <div class="container">
+              <div class="about-banner">
+                <h2 class="deco-title">About Us</h2>
+                  <div class="banner-row">
+                    <div class="banner-col">
+                <img src="./assets/images/boy2.png" width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+                   <img src="./assets/images/girls3.png" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100">
+              </div>
+             <div class="banner-col">
+                <img src="./assets/images/girls4.png" width="250" height="277" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100">
+              <img src="./assets/images/girls5.png" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+            </div>
+          </div>
+        <div class="about-content">
+         <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+              <span>Why Choose Us</span>
+            </p>
+              <h2 class="h2 section-title">
+              Rise Your Hand to Save <strong>Poor Child Life</strong>
+            </h2>
+            <div class="tab-content">
+              <p class="section-text">
+                People who suffer from poverty have no access to sufficient food, proper clothing, medical facilities
+                and a clean environment.
+                But I must explain to you how all this mistaken denouncing pleasure and praising pain was born and I
+                will give you a
+                complete account of the system expoundmaster.
+              </p>
+               <ul class="tab-list">
+                  <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                   <p class="tab-text">Charity For Foods</p>
+                </li>
+                 <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                 <p class="tab-text">Charity For cloths</p>
+                </li>
+                 <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                  <p class="tab-text">Charity For Stationary</p>
+                </li>
+                  <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+                    <p class="tab-text">Charity For Education</p>
+                </li>
+              </ul>
+                <button class="btn btn-secondary">
+                <span>Learn More Us</span>
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+           </div>
+        </div>
+      </div>
+    </section> 
+<!--=========== ABOUT SECTION END =========-->
+
+<!--======= SERVICE SECTION START ===========-->
+<section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+  <div class="container">
+    <p class="section-subtitle">
+      <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+        <span>What We Do</span>
+        </p>
+          <h2 class="h2 section-title">
+              We Work Differently to <strong>keep The World Safe</strong>
+            </h2>
+              <ul class="service-list">
+                 <li>
+                  <div class="service-card">
+                     <div class="card-icon">
+                      <i class="fa-solid fa-pot-food fs-2"></i>
+                   </div> 
+                    <h3 class="h3 card-title">Foods</h3>
+                    <p class="card-text">
+                       To ensure that every
+                         individual has access to
+                           wholesome and nutritious
+                              food.
+                         </p>
+                 <a href="foods.html" class="btn-link">
+               <span>Read More</span>
+            </a>
+    </div>
+</li>
+<li>
+  <div class="service-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-clothes-hanger"></i>
+      </div>
+           <h3 class="h3 card-title">Clothes</h3>
+           <p class="card-text">
+              To ensure that
+              everyperson has access to
+              client,appropriate clothing
+              that suits their needs.
+           </p>
+    <a href="clothes.html" class="btn-link">
+      <span>Read More</span>
+           <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+      </a>
+    </div>
+  </li>
+<li>
+<div class="service-card">
+  <h3 class="h3 card-title">Stationary</h3>
+  <p class="card-text">
+    To ensure that no student
+    is held back due to lavk of
+    stationary.By providing
+    the necessary tools.
+  </p>
+<a href="stationary.html" class="btn-link">
+  <span>Read More</span>
+    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+  </a>
+</div>
+</li>
+<li>
+  <div class="service-card">
+    <h3 class="h3 card-title">Education</h3>
+     <p class="card-text">
+      To provide Educational
+      opportunities,resources
+      and support to
+      undeserved communities.
+    </p>
+    <a href="education.html" class="btn-link">
+      <span>Read More</span>
+        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+      </div>
+    </li>
+</ul>
+</div>
+</section> 
+<!--========== SERVICE SECTION END =========-->
+
+<!--======= DONATE SECTION START =========-->
+       <section class="section donate" id="donate">
+        <div class="container">
+          <ul class="donate-list">
+            <li>
+              <div class="donate-card">
+                <div class="card-banner" style="background-color: black; width: 470px; height: 325px;">
+                  <img src="./assets/images/education.jpg" loading="lazy" alt="Elephant" class="img-cover">
+                </div>
+                <div class="card-content">
+                 
+                  <h3 class="h3 card-title">Raise Hand To Helping poor child for Education Donation</h3>
+                  <a href="#footer">
+                    <button class="btn btn-secondary">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="donate-card">
+                <div class="card-banner" style="background-color: black; height: 325px;width: 520px;">
+                  <img src="./assets/images/food.jfif" width="520" height="350" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </div>
+                <div class="card-content">
+                    <h3 class="h3 card-title">Raise Hand To Helping poor child for Food Donation</h3>
+                    <a href="#footer">
+                      <button class="btn btn-secondary">
+                        <span>Donation</span>
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="donate-card">
+                <div class="card-banner">
+                  <img src="./assets/images/clothes.jpg" width="520" height="325" loading="lazy" alt="Elephant">
+                </div>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Raise Hand To Helping poor child for Clothes Donation</h3>
+                  <a href="#footer">
+                    <button class="btn btn-secondary">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </li> 
+             <li>
+              <div class="donate-card">
+                <div class="card-banner">
+                  <img src="./assets/images/s.jpg" width="520" height="325" loading="lazy" alt="Elephant">
+                </div>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Raise Hand To Helping poor child for Stationary Donation</h3>
+                  <a href="#footer">
+                    <button class="btn btn-secondary">
+                      <span>Donation</span>
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </li> 
+          </ul>
+  </section> 
+<!--====== DONATE SECTION END ========-->
+
+<!--==== FOOTER SECTION START =========-->
+     <footer class="footer" id="footer">
+      <div class="container" id="footer-container">
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">nisha05sahare@gmail.com</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">9168373140</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        ©copyright 2023 <a href="#" class="copyright-link">@nisha05sahare</a>. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+<!--======== FOOTER SECTION END ========-->
+
+<!--======= CUSTOM JS LINK ========-->
+ <script src="./assets/js/script.js"></script>
+
+  <!-- ionicon link----->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
